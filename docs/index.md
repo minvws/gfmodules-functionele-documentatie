@@ -23,3 +23,28 @@ adressering/04_architectuur.md
 adressering/05_koppelvlakken_opzoeken.md
 adressering/06_koppelvlakken_registratie.md
 ```
+
+```{toctree}
+:hidden:
+:depth: 3
+:caption: 📚 Lokalisatie
+
+lokalisatie/01_inleiding.md
+lokalisatie/02_termen.md
+lokalisatie/03_gebruiks_casussen.md
+lokalisatie/04_architectuur.md
+lokalisatie/05_koppelvlakken_nvi.md
+lokalisatie/06_koppelvlakken_lmr.md
+```
+
+```{toctree}
+:hidden:
+:depth: 3
+:caption: 📚 Pseudoniemen
+
+pseudoniemen/01_inleiding.md
+pseudoniemen/02_termen.md
+pseudoniemen/03_gebruiks_casussen.md
+pseudoniemen/04_architectuur.md
+pseudoniemen/05_koppelvlakken
+```

@@ -33,8 +33,9 @@ lokalisatie/01_inleiding.md
 lokalisatie/02_termen.md
 lokalisatie/03_gebruiks_casussen.md
 lokalisatie/04_architectuur.md
-lokalisatie/05_koppelvlakken_nvi.md
-lokalisatie/06_koppelvlakken_lmr.md
+lokalisatie/05_technisch.md
+lokalisatie/06_koppelvlakken_nvi.md
+lokalisatie/07_koppelvlakken_lmr.md
 ```
 
 ```{toctree}

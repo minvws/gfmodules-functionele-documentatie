@@ -1,4 +1,4 @@
-### 
+# Technisch
 
 De systeemarchitectuur ziet er als volgt uit:
 
@@ -21,7 +21,7 @@ het mogelijk om:
 - beschikbaarheid van zorgdata te verwijderen
 - op te vragen welke data geregistreerd is
 
-```mermaid
+```{mermaid}
 sequenceDiagram
     autonumber
     actor zv as Zorgvelener
@@ -40,12 +40,12 @@ sequenceDiagram
 
 Het subsysteem dat de "waar" vraag beantwoord voor zorgsystemen (EPD's etc.) is
 de opzoek-API. Deze kan op basis van een zoekvraag een antwoord gegeven over
-welke zorgaanbieders data hebben die bij de vraag past. 
+welke zorgaanbieders data hebben die bij de vraag past.
 
 Hieronder staat een schematische weergave van de stappen in het opzoek proces in
 samenhang met andere systemen.
 
-```mermaid
+```{mermaid}
 sequenceDiagram
     autonumber
     actor zv as Zorgvelener
@@ -67,7 +67,6 @@ sequenceDiagram
     zs->>zs: Bouw tijdlijn
     zs->>zv: Toon tijdlijn
 ```
-
 
 #### API-standaard
 

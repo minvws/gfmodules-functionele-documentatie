@@ -6,7 +6,7 @@ SVG_FILES := docs/afbeeldingen/structurizr-generieke-functie-adressering.svg \
 
 .PHONY: all clean puml
 
-all: $(SVG_FILES)
+all: $(SVG_FILES) html
 
 # Make SVG generation dependent on puml target
 $(SVG_FILES): puml

@@ -1,5 +1,6 @@
 services:
   sphinx:
+    user: "${UID}:${GID}"
     build:
       context: .
       args:

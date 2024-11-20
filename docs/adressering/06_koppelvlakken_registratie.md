@@ -16,6 +16,5 @@ geeft gedetailleerde specificaties over de werking. Kenmerkend is het gebruik
 van de [history](http://hl7.org/fhir/R4/http.html#history) in combinatie met de
 `since` parameter voor het efficiënt kunnen pollen.
 
-> **Opermking:** De werkgroep architectuur heeft nog geen besluit genomen over
+> **Opmerking:** De werkgroep architectuur heeft nog geen besluit genomen over
 > authenticatie / autorisatie op dit koppelvlak.
-

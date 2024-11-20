@@ -1,0 +1,33 @@
+name: Create release package
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Set env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
+      - uses: actions/checkout@v4
+
+      - name: Run build puml
+        run: make puml
+
+      - name: Run build all
+        run: make all
+
+      - name: Add version file
+        run: 'echo "{ \"version\": \"${{ env.RELEASE_VERSION }}\", \"git_ref\": \"$GITHUB_SHA\"}" > build/version.json'
+
+      - name: Create tar
+        run: tar -czf gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}.tar.gz build
+
+      - name: Upload release tar
+        uses: actions/upload-artifact@v4
+        with:
+          name: gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}
+          path: gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}.tar.gz

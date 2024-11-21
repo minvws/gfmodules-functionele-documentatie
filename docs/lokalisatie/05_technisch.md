@@ -1,16 +1,5 @@
 # Technisch
 
-De systeemarchitectuur ziet er als volgt uit:
-
-![NVI systeemarchitectuur](./afbeeldingen/structurizr-nvi-system-context.svg)
-
-Het systeem is opgedeeld in twee subsystemen:
-
-- Zorgdata registratie
-- Zorgdata lokalisatie
-
-![NVI systeemarchitectuur](./afbeeldingen/structurizr-nvi-container.svg)
-
 ## Zorgdata registratie
 
 Dit subsysteem biet zorgaanbieders de mogelijkheid om beschikbaarheid van

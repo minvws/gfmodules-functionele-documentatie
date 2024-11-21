@@ -1,6 +1,7 @@
 # Koppelvlakken registratie
 
-Voor registratie van adresboek gegevens zijn twee afzonderlijke registratie stappen vereist:
+Voor registratie van adresboek gegevens zijn twee afzonderlijke registratie
+stappen vereist:
 
 1. registratie van Update Supplier adres
 2. leveren van FHIR mCSD entiteiten

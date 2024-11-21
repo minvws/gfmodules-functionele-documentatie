@@ -19,7 +19,8 @@ Het onderstaande diagram geeft een overzicht van de betrokken systemen:
 
 ## Entiteiten
 
-M.b.t. het eerste punt, entiteiten, wordt uitgegaan van ondersteuning van tenminste de volgende entiteiten:
+M.b.t. het eerste punt, entiteiten, wordt uitgegaan van ondersteuning van
+tenminste de volgende entiteiten:
 
 - Organization
 - Affiliation

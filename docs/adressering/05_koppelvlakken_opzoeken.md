@@ -7,4 +7,5 @@ met het adresboek en vervolgens op basis van de specificaties uit ITI-90 een
 vraag stellen. Het adresboek, welke als Selective Supplier optreed, zal het
 antwoord leveren.
 
-Er wordt verondersteld dat het adres van het adresboek zelf via eerdere handmatige configuratie bekend gemaakt is aan het systeem.
+Er wordt verondersteld dat het adres van het adresboek zelf via eerdere
+handmatige configuratie bekend gemaakt is aan het systeem.

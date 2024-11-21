@@ -23,7 +23,6 @@ Een zoekvraag voor de NVI dient de volgende gegevens te bevatten:
 > **Opmerking:** Het autorisatiegedeelte is nog niet uitgewerkt. Dit wacht op
 > besluitvorming uit de I&A werkgroep.`
 
-
 ### Lokalisatievraag
 
 De lokalisatievraag bestaat uit de beoogde uitwisseling (beeld, medicatie, etc.)

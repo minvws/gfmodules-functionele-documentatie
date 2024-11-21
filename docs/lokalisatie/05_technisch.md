@@ -11,7 +11,7 @@ Het systeem is opgedeeld in twee subsystemen:
 
 ![NVI systeemarchitectuur](./afbeeldingen/structurizr-nvi-container.svg)
 
-#### Zorgdata registratie
+## Zorgdata registratie
 
 Dit subsysteem biet zorgaanbieders de mogelijkheid om beschikbaarheid van
 zorgdata te registreren. Hiervoor is een REST API beschikbaar. Deze API maakt
@@ -36,7 +36,7 @@ sequenceDiagram
     lmr->>nvi: Registreer beschikbaarheid van gegevens
 ```
 
-#### Lokalisatie
+## Lokalisatie
 
 Het subsysteem dat de "waar" vraag beantwoord voor zorgsystemen (EPD's etc.) is
 de opzoek-API. Deze kan op basis van een zoekvraag een antwoord gegeven over
@@ -68,7 +68,7 @@ sequenceDiagram
     zs->>zv: Toon tijdlijn
 ```
 
-#### API-standaard
+## API-standaard
 
 Hoewel binnen de zorg vooral met FHIR gewerkt wordt zal de NVI een eigen
 standaard gebruiken. De reden hiervoor is dat FHIR geen logisch concept heeft

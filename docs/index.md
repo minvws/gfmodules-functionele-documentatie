@@ -15,6 +15,10 @@ wordt verstrekt "zoals deze is" zonder enige expliciete of impliciete garanties.
 Gebruik van de informatie is op eigen risico en de auteurs zijn niet
 aansprakelijk voor eventuele fouten of omissies in de inhoud.
 
+De in deze documentatie genoemde systemen worden via technische conceptuele
+implementaties getoetst. Op de [technische
+uitwerkingen](./technische_uitwerking.md) pagina staat hier informatie over.
+
 ```{toctree}
 :hidden:
 :depth: 3

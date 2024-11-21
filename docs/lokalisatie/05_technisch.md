@@ -2,7 +2,7 @@
 
 ## Zorgdata registratie
 
-Dit subsysteem biet zorgaanbieders de mogelijkheid om beschikbaarheid van
+Dit subsysteem biedt zorgaanbieders de mogelijkheid om beschikbaarheid van
 zorgdata te registreren. Hiervoor is een REST API beschikbaar. Deze API maakt
 het mogelijk om:
 

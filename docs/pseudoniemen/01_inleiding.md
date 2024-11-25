@@ -5,7 +5,7 @@ Hiermee kunnen burgers eenduidig worden geïdentificeerd. Het nadeel van het BSN
 is dat dit, vanwege het identificerende karakter, een privacy gevoelig gegeven
 is.
 
-Enkele diensten die de Generieke Functies mogelijk maken hebben geen direct
+Enkele diensten die de Generieke Functies mogelijk maken hebben geen directe
 noodzaak het BSN te verwerken. Deze kunnen, mits het mogelijk is om tussen
 systemen over een burger te communiceren, ook een andere identificatie code
 gebruiken.

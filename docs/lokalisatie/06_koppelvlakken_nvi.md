@@ -21,7 +21,7 @@ Een zoekvraag voor de NVI dient de volgende gegevens te bevatten:
     - Patiëntidentificatie
 
 > **Opmerking:** Het autorisatiegedeelte is nog niet uitgewerkt. Dit wacht op
-> besluitvorming uit de I&A werkgroep.`
+> besluitvorming uit de I&A werkgroep.
 
 ### Lokalisatievraag
 

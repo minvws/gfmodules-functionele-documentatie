@@ -5,7 +5,7 @@ pseudoniemen.
 
 ## Communiceren met andere dienst via pseudoniem
 
-Het pseudoniemen systeem maakt het voor twee systemen om te communiceren over
+Het pseudoniemen systeem maakt het voor twee systemen mogelijk om te communiceren over
 een burger zonder het BSN met elkaar uit te wisselen. Deze gebruikscasus
 beschrijft hoe het pseudoniemen systeem deze rol vervult:
 

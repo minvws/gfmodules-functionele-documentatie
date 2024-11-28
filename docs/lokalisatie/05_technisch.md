@@ -64,5 +64,5 @@ standaard gebruiken. De reden hiervoor is dat FHIR geen logisch concept heeft
 wat correspondeert met de NVI-behoeften.
 
 Deze API van de NVI zal, in lijn met het [Forum
-Standaardisatie](https://www.forumstandaardisatie.nl) als REST API worden
-aangeboden.
+Standaardisatie](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)
+als REST API worden aangeboden.

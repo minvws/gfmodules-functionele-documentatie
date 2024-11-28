@@ -57,7 +57,7 @@ Bij de uitrol wordt uitgegaan van de volgende onderdelen:
 3. Adresboek(en)
 4. Synchronisatie applicatie(s)
 
-De leveranciers van adresboek gegevens corresponderen met de FHIR mCSD Update
+De leveranciers van adresboekgegevens corresponderen met de FHIR mCSD Update
 Supplier rol. Het onder punt 3 benoemde adresboek realiseert de Selective
 Supplier functionaliteit. Deze doet dat via een eigen opslag die gevuld wordt
 middels de in punt 4 benoemde synchronisatie applicatie.

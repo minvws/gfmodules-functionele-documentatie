@@ -15,4 +15,4 @@ de architectuur gewerkt met een alternatief voor het BSN: het dienst specifieke
 pseudoniem. Kenmerken van deze opzet zijn:
 
 - een pseudoniem dat uniek is voor elke organisatie
-- organisaties krijgen geen van pseudoniemen bij andere organisaties
+- organisaties krijgen geen van de uitgegeven pseudoniemen bij andere organisaties

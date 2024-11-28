@@ -28,10 +28,10 @@ nodig is voor de behandeling.
 ## LMR
 
 Het lokalisatie metadata register (LMR) is een beschrijving van een bronsysteem
-voor het opbouwen van de tijdlijn informatie. Technisch betekent dit een systeem
-wat via FHIR te bevragen valt. Aanvullend zijn er specificaties over de FHIR
-resources die aanwezig geacht worden en de velden die daarbij beschikbaar
-gesteld dienen te worden.
+wat de gegevens levert die nodig zijn voor het opbouwen van de tijdlijn.
+Technisch betekent dit een systeem wat via FHIR te bevragen valt. Aanvullend
+zijn er specificaties over de FHIR resources die aanwezig geacht worden en de
+velden die daarbij beschikbaar gesteld dienen te worden.
 
 De architectuur opzet gaat ervan uit dat er binnen de zorg FHIR-implementaties
 in gebruik zijn die geschikt zijn voor de LMR rol. Het is echter ook mogelijk om

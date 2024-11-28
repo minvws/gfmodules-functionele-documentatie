@@ -17,7 +17,7 @@ index nodig. Deze gebruikscasus beschrijft hoe de NVI deze rol vervult:
 
 Het onderstaande diagram geeft een vereenvoudigd overzicht van het lokalisatieproces.
 
-```mermaid
+```{mermaid}
 sequenceDiagram
     actor Zorgverlener
     participant EPD
@@ -35,7 +35,6 @@ sequenceDiagram
     LMR2-->>EPD: Tijdlijn data van patiënt
     EPD-->>EPD: Combineer data tot tijdlijn
     EPD-->>Zorgverlener: Tijdlijn
-```
 
 ## Zorgdata registratie
 

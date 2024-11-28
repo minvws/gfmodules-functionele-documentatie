@@ -52,7 +52,7 @@ van gemaakt.
 
 Bij de uitrol wordt uitgegaan van de volgende onderdelen:
 
-1. Centraal overzicht van leveranciers van adresboek gegevens
+1. Centraal overzicht van leveranciers van adresboekgegevens
 2. Leveranciers van adresboek gegevens
 3. Adresboek(en)
 4. Synchronisatie applicatie(s)

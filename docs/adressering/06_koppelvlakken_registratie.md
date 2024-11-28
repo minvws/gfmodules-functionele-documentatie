@@ -15,7 +15,8 @@ Het koppelvlak voor het leveren van FHIR mCSD entiteiten gaat uit van een
 standaard FHIR API. [ITI-91](https://profiles.ihe.net/ITI/mCSD/ITI-91.html)
 geeft gedetailleerde specificaties over de werking. Kenmerkend is het gebruik
 van de [history](http://hl7.org/fhir/R4/http.html#history) in combinatie met de
-`since` parameter voor het efficiënt kunnen pollen.
+`since` parameter voor het efficiënt kunnen ophalen van data via een "poll"
+mechanisme.
 
 > **Opmerking:** De werkgroep architectuur heeft nog geen besluit genomen over
 > authenticatie / autorisatie op dit koppelvlak.

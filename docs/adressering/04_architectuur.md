@@ -30,7 +30,7 @@ tenminste de volgende entiteiten:
 - Facility
 
 > **Opmerking:** de architectuur werkgroep voor adressering werkt aan een
-> verdere uitwerking. Van de entiteiten en de invulling hiervan.
+> verdere uitwerking van de entiteiten en de invulling hiervan.
 
 ## Uitrol
 

@@ -35,6 +35,7 @@ sequenceDiagram
     LMR2-->>EPD: Tijdlijn data van patiënt
     EPD-->>EPD: Combineer data tot tijdlijn
     EPD-->>Zorgverlener: Tijdlijn
+```
 
 ## Zorgdata registratie
 
@@ -42,7 +43,7 @@ sequenceDiagram
 2. Het LMR ontvangt deze dossier bijwerking.
 3. Het LMR registreert de beschikbaarheid van het dossier bij de NVI.
 
-```mermaid
+```{mermaid}
 sequenceDiagram
     actor Zorgverlener
     participant EPD

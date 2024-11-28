@@ -11,7 +11,7 @@ systemen over een burger te communiceren, ook een andere identificatie code
 gebruiken.
 
 Als privacy verhogende maatregel wordt daarom, waar mogelijk en logisch, binnen
-de architectuur gewerkt met alternatief voor het BSN: het dienst specifieke
+de architectuur gewerkt met een alternatief voor het BSN: het dienst specifieke
 pseudoniem. Kenmerken van deze opzet zijn:
 
 - een pseudoniem uniek is voor elke organisatie

@@ -1,7 +1,7 @@
 # Architectuur
 
 [FHIR mCSD](https://profiles.ihe.net/ITI/mCSD/index.html) is het basismodel voor
-de architectuur voor de generieke functie adressering. Binnen mCSD zijn er twee
+de architectuur voor de generieke functie adressering. Binnen mCSD zijn twee
 kenmerkende onderdelen:
 
 1. een definitie van entiteiten
@@ -45,8 +45,8 @@ De selective consumer en supplier (punt 1 en 2) hebben betrekking op de
 opzoekvraag. De consumer is het vragende systeem. De supplier is het
 antwoord gevende systeem.
 
-Voor de update consumer en update supplier geld dat dit rollen zijn ter
-ondersteuning van een architectuur waarbij met replicatie van gegevens gewerkt
+Voor de update consumer en update supplier geldt dat dit rollen zijn ter
+ondersteuning van een architectuur, waarbij met replicatie van gegevens gewerkt
 wordt. In de uitwerking van de generieke functie adressering wordt hier gebruik
 van gemaakt.
 

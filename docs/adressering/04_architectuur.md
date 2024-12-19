@@ -45,7 +45,7 @@ De selective consumer en supplier (punt 1 en 2) hebben betrekking op de
 opzoekvraag. De consumer is het vragende systeem. De supplier is het
 antwoord gevende systeem.
 
-Voor de update consumer en update supplier geld dat dit rollen zijn ter
+Voor de update consumer en update supplier geldt dat dit rollen zijn ter
 ondersteuning van een architectuur waarbij met replicatie van gegevens gewerkt
 wordt. In de uitwerking van de generieke functie adressering wordt hier gebruik
 van gemaakt.

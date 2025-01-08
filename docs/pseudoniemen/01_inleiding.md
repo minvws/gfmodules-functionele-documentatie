@@ -1,6 +1,6 @@
 # Inleiding
 
-Communicatie *over* een patiënt gebeurd binnen de zorg op basis van het BSN.
+Communicatie *over* een patiënt gebeurt binnen de zorg op basis van het BSN.
 Hiermee kunnen burgers eenduidig worden geïdentificeerd. Het nadeel van het BSN
 is dat dit, vanwege het identificerende karakter, een privacy gevoelig gegeven
 is.

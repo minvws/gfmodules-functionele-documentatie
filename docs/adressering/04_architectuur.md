@@ -9,7 +9,7 @@ kenmerkende onderdelen:
 
 Een belangrijk ontwerpprincipe van deze architectuur is de focus op
 (relatief)statische adresgegevens. Het adresboek bevat alleen informatie die
-niet vaak wijzigt. Concreet betekend dit data niet niet meerdere keren per dag
+niet vaak wijzigt. Concreet betekend dit dat het niet meerdere keren per dag
 wordt aangepast. Een voorbeeld hiervan is een FHIR endpoint. Het aantal vrije
 bedden is een voorbeeld van het type gegevens wat niet geschikt is voor het
 adresboek, deze gegevens wijzigen te snel. Dit betekent dat:

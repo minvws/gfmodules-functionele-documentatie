@@ -45,7 +45,7 @@ sequenceDiagram
 Zorginstellingen hebben een verantwoordelijkheid om zelf te bepalen welke
 contact punten zij ter beschikking stellen. Dit kunnen zij doen door het
 publiceren van de contact gegevens via een FHIR endpoint wat het IHE mCSD
-profield ondersteund. In het specifiek is dit endpoint een Update Supplier. Dit
+profiel ondersteund. In het specifiek is deze endpoint een Update Supplier. Deze
 endpoint dient bij het LRZa bekend gemaakt te worden.
 
 1. Een zorginstelling bepaalt welke contactpunten beschikbaar worden gesteld.

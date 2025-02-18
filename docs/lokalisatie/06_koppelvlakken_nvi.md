@@ -59,6 +59,7 @@ registratie.
 
 > **Opmerking:** Zie de opmerkingen bij opzoeken voor openstaande onderwerpen.
 
-Voor de registratie van de organisatie wordt op dit moment uitgegaan van het URA
-als ID. Dit is voorlopig gekozen in afwachting van een definitieve keuze uit de
-requirements en architectuur werkgroepen.
+Bij de registratie van de gegevens (uitwisseling en patiëntidentificatie) zal
+ook de organisatie vastgelegd worden. Hiervoor wordt op dit moment uitgegaan van
+het URA als ID. Dit is voorlopig gekozen in afwachting van een definitieve keuze
+uit de requirements en architectuur werkgroepen.

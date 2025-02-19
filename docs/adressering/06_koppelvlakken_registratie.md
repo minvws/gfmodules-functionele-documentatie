@@ -4,10 +4,11 @@ Voor registratie van adresboek gegevens zijn twee afzonderlijke registratie
 stappen vereist:
 
 1. registratie van Update Supplier adres
-2. leveren van FHIR mCSD entiteiten
+2. leveren van FHIR mCSD entiteiten (organisatie, locatie, endpoint etc.
+   informatie)
 
-> **Opmerking:** Registratie van het Update Supplier adres is wordt nog
-> uitgewerkt binnen de architectuur werkgroep.
+> **Opmerking:** Registratie van het Update Supplier adres wordt nog uitgewerkt
+> binnen de architectuur werkgroep.
 
 ## Levering van FHIR mCSD entiteiten
 

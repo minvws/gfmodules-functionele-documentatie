@@ -1,6 +1,7 @@
 # Architectuur
 
-De architectuur voor lokalisatie bestaat uit de volgende onderdelen:
+De architectuur voor lokalisatie bestaat uit / maakt gebruik van de volgende
+onderdelen:
 
 - Nationale Verwijs Index (NVI)
 - Lokalisatie Metadata Register (LMR)
@@ -27,22 +28,22 @@ nodig is voor de behandeling.
 
 ## LMR
 
-Het lokalisatie metadata register (LMR) is een beschrijving van een bronsysteem
+Het lokalisatie metadata register (LMR) is een specificatie voor een bronsysteem
 wat de gegevens levert die nodig zijn voor het opbouwen van de tijdlijn.
 Technisch betekent dit een systeem wat via FHIR te bevragen valt. Aanvullend
 zijn er specificaties over de FHIR resources die aanwezig geacht worden en de
 velden die daarbij beschikbaar gesteld dienen te worden.
 
-De architectuur opzet gaat ervan uit dat er binnen de zorg FHIR-implementaties
-in gebruik zijn die geschikt zijn voor de LMR rol. Het is echter ook mogelijk om
-een apart systeem hiervoor te (laten) inrichten.
+In de architectuur wordt ervan uit gegaan dat er binnen de zorg
+FHIR-implementaties in gebruik zijn die geschikt zijn voor de LMR rol. Het is
+echter ook mogelijk om een apart systeem hiervoor te (laten) inrichten.
 
 ## PRS
 
 Als privacy verhogende maatregel zal de NVI zelf geen BSN verwerken. Om toch een
 lokalisatie vraag te kunnen beantwoorden zal er gewerkt worden met een
-pseudoniem. De pseudoniemen referentie service heeft als taak dit pseudoniem te
-maken.
+pseudoniem. De pseudoniemen referentie service (PRS) heeft als taak dit
+pseudoniem te maken.
 
 ## Adressering
 

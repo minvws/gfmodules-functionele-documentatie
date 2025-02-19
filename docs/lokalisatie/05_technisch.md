@@ -25,7 +25,7 @@ sequenceDiagram
     lmr->>nvi: Registreer beschikbaarheid van gegevens
 ```
 
-## Lokalisatie
+## Zorgdata lokalisatie
 
 Het subsysteem dat de "waar" vraag beantwoord voor zorgsystemen (EPD's etc.) is
 de opzoek-API. Deze kan op basis van een zoekvraag een antwoord gegeven over

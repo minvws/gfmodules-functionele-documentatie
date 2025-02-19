@@ -7,11 +7,17 @@ kenmerkende onderdelen:
 1. een definitie van entiteiten
 2. uitrol mogelijkheden
 
-Een van de ontwerpcriteria voor de architectuur is dat het adresboek enkel
-gegevens bevat met een relatief lange geldigheidsduur. Hierdoor is de informatie
-die via de generieke functie adressering verkregen wordt zelf ongeschikt voor
-real-time gebruik. Wel kunnen er technische adressen verkregen worden via de
-generieke functie waarmee real-time gegevens verzameld kunnen worden.
+Een belangrijk ontwerpprincipe van deze architectuur is de focus op
+(relatief)statische adresgegevens. Het adresboek bevat alleen informatie die
+niet vaak wijzigt. Concreet betekend dit dat het niet meerdere keren per dag
+wordt aangepast. Een voorbeeld hiervan is een FHIR endpoint. Het aantal vrije
+bedden is een voorbeeld van het type gegevens wat niet geschikt is voor het
+adresboek, deze gegevens wijzigen te snel. Dit betekent dat:
+
+- De generieke functie adressering niet bedoeld is voor real-time gegevensuitwisseling
+- Wel kunnen via deze functie technische adressen opgezocht worden
+- Met deze technische adressen kunnen vervolgens real-time gegevens worden
+  opgevraagd bij de betreffende systemen
 
 Het onderstaande diagram geeft een overzicht van de betrokken systemen:
 
@@ -34,16 +40,16 @@ tenminste de volgende entiteiten:
 
 ## Uitrol
 
-FHIR mCSD kent verschillende rollen:
+FHIR mCSD kent verschillende rollen aan de betrokken systemen toe. Dit zijn:
 
 1. Selective Consumer
 2. Selective Supplier
 3. Update Consumer
 4. Update Supplier
 
-De selective consumer en supplier (punt 1 en 2) hebben betrekking op de
-opzoekvraag. De consumer is het vragende systeem. De supplier is het
-antwoord gevende systeem.
+De selective consumer en supplier rollen (punt 1 en 2) hebben betrekking op de
+opzoekvraag. De consumer is het vragende systeem. De supplier is het antwoord
+gevende systeem.
 
 Voor de update consumer en update supplier geldt dat dit rollen zijn ter
 ondersteuning van een architectuur waarbij met replicatie van gegevens gewerkt

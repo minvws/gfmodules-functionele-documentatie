@@ -2,3 +2,7 @@
 build/
 structurizr-*
 .DS_Store
+.idea/
+
+docs/*.zip
+docs/locales/*.mo

@@ -20,14 +20,11 @@ jobs:
       - name: Run build all
         run: make all
 
-      - name: Copy to public folder
-        run: cp -R ./build/html ./public
-
       - name: Add version file
-        run: 'echo "{ \"version\": \"${{ env.RELEASE_VERSION }}\", \"git_ref\": \"$GITHUB_SHA\"}" > public/version.json'
+        run: 'echo "{ \"version\": \"${{ env.RELEASE_VERSION }}\", \"git_ref\": \"$GITHUB_SHA\"}" > build/version.json'
 
       - name: Create tar
-        run: tar -czf gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}.tar.gz public/
+        run: tar -czf gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}.tar.gz build
 
       - name: Upload release tar
         uses: actions/upload-artifact@v4

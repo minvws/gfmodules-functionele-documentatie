@@ -1,4 +1,4 @@
 .java/
 
 docs/*.zip
-docs/locales/*.mo
+docs/locales/*/LC_MESSAGES/sphinx.mo

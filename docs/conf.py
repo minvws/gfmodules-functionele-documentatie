@@ -17,7 +17,7 @@ release = "1"
 extensions = ["myst_parser", "sphinxcontrib.mermaid"]
 
 templates_path = ["_templates"]
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 language = "nl"
 
@@ -33,7 +33,7 @@ html_show_sourcelink = False
 # Download the theme and copy it to the source directory of the sphinx project:
 # https://github.com/minvws/icore-manon-sphinx-theme/actions/runs/13544738793/artifacts/2655913970
 
-html_theme = 'rijksoverheid_ui_theme_v0.1.0-beta.4'
+html_theme = 'sphinx_rijksoverheid_ui_theme'
 html_theme_path = ["."]
 locale_dirs = ['locales/']
 

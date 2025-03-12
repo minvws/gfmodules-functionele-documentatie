@@ -29,9 +29,6 @@ html_show_sphinx = False
 html_show_sourcelink = False
 
 # -- Theme: Rijksoverheid UI and Options for HTML output -----------
-#
-# Download the theme and copy it to the source directory of the sphinx project:
-# https://github.com/minvws/icore-manon-sphinx-theme/actions/runs/13544738793/artifacts/2655913970
 
 html_theme = 'sphinx_rijksoverheid_ui_theme'
 html_theme_path = ["."]

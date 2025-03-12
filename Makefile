@@ -3,7 +3,7 @@ STRUCTURIZR_IMAGE := structurizr/cli
 PLANTUML_IMAGE := plantuml/plantuml
 SVG_FILES := docs/afbeeldingen/structurizr-generieke-functie-adressering.svg \
              docs/afbeeldingen/structurizr-generieke-functie-lokalisatie.svg
-MANON_SPHINX_THEME := https://github.com/minvws/icore-manon-sphinx-theme/actions/runs/13544738793/artifacts/2655913970
+MANON_SPHINX_THEME := https://github.com/minvws/icore-manon-sphinx-theme/releases/latest/download/sphinx_rijksoverheid_ui_theme.zip
 
 .PHONY: all clean puml
 
@@ -28,4 +28,4 @@ html:
 	docker compose run --rm sphinx make html
 
 theme:
-	curl --output docs/rijksoverheid_sphinx_theme.zip $(MANON_SPHINX_THEME)
+	curl --output docs/sphinx_rijksoverheid_ui_theme.zip $(MANON_SPHINX_THEME)

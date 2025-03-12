@@ -17,7 +17,7 @@ release = "1"
 extensions = ["myst_parser", "sphinxcontrib.mermaid"]
 
 templates_path = ["_templates"]
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build']
 
 language = "nl"
 

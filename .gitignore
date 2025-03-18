@@ -1,4 +1,6 @@
 .java/
 build/
 structurizr-*
-.DS_Store
+
+docs/*.zip
+docs/locales/*/LC_MESSAGES/sphinx.mo

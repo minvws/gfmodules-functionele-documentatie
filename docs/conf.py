@@ -17,14 +17,26 @@ release = "1"
 extensions = ["myst_parser", "sphinxcontrib.mermaid"]
 
 templates_path = ["_templates"]
-exclude_patterns = []
+exclude_patterns = ['_build']
 
 language = "nl"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "alabaster"
 html_static_path = ["_static"]
 html_show_sphinx = False
 html_show_sourcelink = False
+
+# -- Theme: Rijksoverheid UI and Options for HTML output -----------
+
+html_theme = 'sphinx_rijksoverheid_ui_theme'
+html_theme_path = ["."]
+locale_dirs = ['locales/']
+
+html_theme_options = {
+    "description": "Generieke Functies",
+    "github_user": "minvws",
+    "github_repo": "gfmodules-functional-documentation",
+    "tidelift_url": "https://github.com/minvws/gfmodules-functional-documentation",
+}

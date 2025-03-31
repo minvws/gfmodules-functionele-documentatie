@@ -30,7 +30,7 @@ html_show_sourcelink = False
 
 # -- Theme: Rijksoverheid UI and Options for HTML output -----------
 
-html_theme = 'sphinx_rijksoverheid_ui_theme'
+html_theme = 'sphinx-rijkshuisstijl-2008'
 html_theme_path = ["."]
 locale_dirs = ['locales/']
 

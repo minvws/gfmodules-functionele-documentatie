@@ -14,8 +14,8 @@ jobs:
 
       - uses: actions/checkout@v4
 
-      - name: Download rijksoverheid-ui-theme
-        run: gh release download --clobber -D docs/ --repo minvws/icore-manon-sphinx-theme --pattern 'sphinx_rijksoverheid*.zip'
+      - name: Download the Sphinx Rijkshuisstijl theme
+        run: gh release download --clobber -D docs/ --repo minvws/icore-manon-sphinx-theme --pattern 'sphinx-rijkshuisstijl*.zip'
         env:
           GH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
 

@@ -4,3 +4,7 @@ structurizr-*
 
 docs/*.zip
 docs/locales/*/LC_MESSAGES/sphinx.mo
+
+docs/_static/js/d3.min.js
+docs/_static/js/mermaid.min.js
+docs/_static/js/mermaid-layout-elk.esm.min.mjs

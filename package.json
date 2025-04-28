@@ -1,0 +1,24 @@
+{
+  "name": "gfmodules-functional-documentation",
+  "version": "1.0.0",
+  "description": "GFModules documentation repository",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minvws/gfmodules-functional-documentation.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/minvws/gfmodules-functional-documentation/issues"
+  },
+  "homepage": "https://github.com/minvws/gfmodules-functional-documentation#readme",
+  "devDependencies": {
+    "@mermaid-js/layout-elk": "^0.1.7",
+    "mermaid": "^11.6.0"
+  }
+}

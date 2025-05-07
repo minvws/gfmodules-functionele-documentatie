@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 BASEDIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 STRUCTURIZR_IMAGE := structurizr/cli
 PLANTUML_IMAGE := plantuml/plantuml
@@ -9,7 +11,7 @@ MERMAID_ELK_FILE := node_modules/@mermaid-js/layout-elk/dist/mermaid-layout-elk.
 
 .PHONY: all clean puml
 
-all: $(SVG_FILES) html
+all: $(SVG_FILES) copy-mermaidjs html
 
 # Make SVG generation dependent on puml target
 $(SVG_FILES): puml

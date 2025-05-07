@@ -4,3 +4,5 @@ structurizr-*
 
 docs/*.zip
 docs/locales/*/LC_MESSAGES/sphinx.mo
+
+docs/_static/js/*

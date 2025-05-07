@@ -1,12 +1,17 @@
+SHELL := /bin/bash
+
 BASEDIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 STRUCTURIZR_IMAGE := structurizr/cli
 PLANTUML_IMAGE := plantuml/plantuml
 SVG_FILES := docs/afbeeldingen/structurizr-generieke-functie-adressering.svg \
              docs/afbeeldingen/structurizr-generieke-functie-lokalisatie.svg
+MERMAID_FILE := node_modules/mermaid/dist/mermaid.min.js
+D3_FILE := node_modules/d3/dist/d3.min.js
+MERMAID_ELK_FILE := node_modules/@mermaid-js/layout-elk/dist/mermaid-layout-elk.esm.min.mjs
 
 .PHONY: all clean puml
 
-all: $(SVG_FILES) html
+all: $(SVG_FILES) copy-mermaidjs html
 
 # Make SVG generation dependent on puml target
 $(SVG_FILES): puml
@@ -26,3 +31,9 @@ livehtml:
 html:
 	docker compose run --rm sphinx make html
 
+# Copy mermaid, mermaid-layout-elk and d3 to docs/_static
+copy-mermaidjs:
+	[[ -d node_modules ]] || (echo "❌ 'node_modules' not found. Run 'npm install'." && exit 1)
+	[[ -e $(MERMAID_FILE) ]] && cp $(MERMAID_FILE) docs/_static/js/mermaid.min.js
+	[[ -e $(D3_FILE) ]] && cp $(D3_FILE) docs/_static/js/d3.min.js
+	[[ -e $(MERMAID_ELK_FILE) ]] && cp $(MERMAID_ELK_FILE) docs/_static/js/mermaid-layout-elk.esm.min.mjs

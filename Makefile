@@ -31,6 +31,7 @@ html:
 
 # Copy mermaid, mermaid-layout-elk and d3 to docs/_static
 copy-mermaidjs:
+	[[ -d node_modules ]] || (echo "❌ 'node_modules' not found. Run 'npm install'." && exit 1)
 	[[ -e $(MERMAID_FILE) ]] && cp $(MERMAID_FILE) docs/_static/js/mermaid.min.js
 	[[ -e $(D3_FILE) ]] && cp $(D3_FILE) docs/_static/js/d3.min.js
 	[[ -e $(MERMAID_ELK_FILE) ]] && cp $(MERMAID_ELK_FILE) docs/_static/js/mermaid-layout-elk.esm.min.mjs

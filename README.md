@@ -1,11 +1,13 @@
 # GFModules documentation repository
 
 ## Prerequisites
+
 - Node.js and npm
 - Make
 - Docker (with Sphinx and Python)
 
 ## Setup
+
 1. Install project dependencies:
 
 ```bash
@@ -27,5 +29,6 @@ make livehtml
 ```
 
 ## Additional Resources
+
 - [Mermaid Documentation](https://mermaid.js.org/intro/)
 - [Sphinx docs](https://www.sphinx-doc.org/en/master/usage/quickstart.html)

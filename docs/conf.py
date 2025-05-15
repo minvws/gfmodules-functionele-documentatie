@@ -31,9 +31,9 @@ html_show_sourcelink = False
 # Add mermaidjs and dependencies to the _static directory to avoid security policy issues in the browser
 # https://manpages.debian.org/unstable/python3-sphinxcontrib-mermaid/sphinxcontrib-mermaid.3.en.html
 
-mermaid_use_local = "js/mermaid.min.js"
-mermaid_elk_use_local = "js/mermaid-layout-elk.esm.min.mjs"
-d3_use_local = "js/d3.min.js"
+mermaid_use_local = "/_static/js/mermaid.min.js"
+mermaid_elk_use_local = "/_static/js/mermaid-layout-elk.esm.min.mjs"
+d3_use_local = "/_static/js/d3.min.js"
 
 # -- Theme: Rijksoverheid UI and Options for HTML output -----------
 
@@ -46,4 +46,7 @@ html_theme_options = {
     "github_user": "minvws",
     "github_repo": "gfmodules-functional-documentation",
     "tidelift_url": "https://github.com/minvws/gfmodules-functional-documentation",
+    "show_copyright_privacy_block_footer": "true",
+    "copyright_url": "/copyright.html",
+    "privacy_url": "https://irealisatie.nl/privacy",
 }

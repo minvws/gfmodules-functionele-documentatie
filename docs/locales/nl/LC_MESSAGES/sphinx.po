@@ -36,3 +36,6 @@ msgstr "Waarschuwing"
 
 msgid "Please activate JavaScript to enable the search functionality."
 msgstr "Activeer JavaScript om de zoekfunctionaliteit in te schakelen."
+
+msgid "About this website"
+msgstr "Over deze site"

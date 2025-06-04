@@ -3,25 +3,20 @@ SHELL := /bin/bash
 BASEDIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 STRUCTURIZR_IMAGE := structurizr/cli
 PLANTUML_IMAGE := plantuml/plantuml
-SVG_FILES := docs/afbeeldingen/structurizr-generieke-functie-adressering.svg \
-             docs/afbeeldingen/structurizr-generieke-functie-lokalisatie.svg
 MERMAID_FILE := node_modules/mermaid/dist/mermaid.min.js
 D3_FILE := node_modules/d3/dist/d3.min.js
 MERMAID_ELK_FILE := node_modules/@mermaid-js/layout-elk/dist/mermaid-layout-elk.esm.min.mjs
 
 .PHONY: all clean puml
 
-all: $(SVG_FILES) copy-mermaidjs html
-dev: clean $(SVG_FILES) copy-mermaidjs livehtml
-
-# Make SVG generation dependent on puml target
-$(SVG_FILES): puml
+all: svg copy-mermaidjs html
+dev: clean svg copy-mermaidjs livehtml
 
 puml: workspace.dsl
-	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/workspace.dsl:/usr/local/structurizr/workspace.dsl" -v "$(BASEDIR)/docs/afbeeldingen:/usr/local/structurizr/docs/afbeeldingen" $(STRUCTURIZR_IMAGE) export -f plantuml -o docs/afbeeldingen -w workspace.dsl
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/workspace.dsl:/usr/local/structurizr/workspace.dsl" -v "$(BASEDIR)/docs/afbeeldingen:/usr/local/structurizr/docs/afbeeldingen" $(STRUCTURIZR_IMAGE) export -format plantuml -output docs/afbeeldingen -workspace workspace.dsl
 
-docs/afbeeldingen/%.svg: docs/afbeeldingen/%.puml workspace.dsl
-	docker run --rm --user $(shell id -u):$(shell id -g) -v $(BASEDIR):/data/ $(PLANTUML_IMAGE) -tsvg $<
+svg: puml
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/docs/afbeeldingen:/source" $(PLANTUML_IMAGE) -tsvg "/source/*.puml"
 
 clean:
 	rm -f docs/afbeeldingen/*.puml docs/afbeeldingen/*.svg

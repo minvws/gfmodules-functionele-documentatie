@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "Generieke Functies"
-copyright = "2024, gfmodules"
+copyright = "2025 Generieke Functies"
 author = "irealisatie"
 release = "1"
 

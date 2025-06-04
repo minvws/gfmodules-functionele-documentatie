@@ -16,7 +16,8 @@ puml: workspace.dsl
 	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/workspace.dsl:/usr/local/structurizr/workspace.dsl" -v "$(BASEDIR)/docs/afbeeldingen:/usr/local/structurizr/docs/afbeeldingen" $(STRUCTURIZR_IMAGE) export -format plantuml -output docs/afbeeldingen -workspace workspace.dsl
 
 svg: puml
-	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/docs/afbeeldingen:/source" $(PLANTUML_IMAGE) -tsvg "/source/*.puml"
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/docs/afbeeldingen:/source" $(PLANTUML_IMAGE) -tsvg -o "/source" "/source/*.puml"
+	rm -f docs/afbeeldingen/*.puml
 
 clean:
 	rm -f docs/afbeeldingen/*.puml docs/afbeeldingen/*.svg

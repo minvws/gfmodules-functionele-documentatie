@@ -1,4 +1,7 @@
-# GFModules documentation repository
+# Generic Functions Modules - Functional Documentation
+
+This repository contains the functional documentation for the [Generic Functions Modules](https://github.com/minvws/gfmodules-coordination).
+The documentation is built using Sphinx.
 
 ## Prerequisites
 
@@ -6,27 +9,36 @@
 - Make
 - Docker (with Sphinx and Python)
 
-## Setup
+## Development
 
 1. Install project dependencies:
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
-## Development
+2. Download the latest version of the Rijkshuisstijl Sphinx theme.
 
-Compile and generate the documentation locally by running:
+    For this, you need to have the GitHub CLI installed and authenticated.
+    See [GitHub CLI documentation](https://github.com/cli/cli) for installation instructions.
 
-```bash
-make all
-```
+    ```bash
+    gh release download --clobber -D docs/ --repo minvws/icore-manon-sphinx-theme --pattern 'sphinx-rijkshuisstijl*.zip'
+    ```
 
-Start the local (live)html server with auto-reload:
+3. Compile and generate the documentation locally
 
-```bash
-make livehtml
-```
+    It will start the local live server and watch for changes in the source files.
+
+    ```bash
+    make dev
+    ```
+
+    If you want to build the documentation without starting a live server, you can run:
+
+    ```bash
+    make all
+    ```
 
 ## Additional Resources
 

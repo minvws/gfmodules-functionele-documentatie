@@ -48,5 +48,5 @@ html_theme_options = {
     "tidelift_url": "https://github.com/minvws/gfmodules-functional-documentation",
     "show_copyright_privacy_block_footer": "true",
     "copyright_url": "/copyright.html",
-    "privacy_url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy",
+    "privacy_url": "/privacy.html",
 }

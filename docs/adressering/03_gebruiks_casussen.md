@@ -24,7 +24,7 @@ gegevens.
 Het onderstaande diagram geeft een vereenvoudigd overzicht van het
 adresseringsproces.
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     actor Zorgverlener
     participant EPD as EPD<br>«Selective Consumer»
@@ -54,7 +54,7 @@ endpoint dient bij het LRZa bekend gemaakt te worden.
 3. Het FHIR endpoint wordt bij het LRZa geregistreerd.
 4. Adresboek systemen kunnen het LRZa bevragen om bronnen van adresgegevens te vinden.
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     actor Zorginstelling
 
@@ -83,7 +83,7 @@ Het actualiseren van adresgegevens verloopt via de volgende stappen:
    van endpoints.
 6. Dit proces wordt periodiek herhaald om de actuele stand van zaken te behouden.
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     participant Adresboek as Adresboek<br>«Update Consumer»
     participant LRZa

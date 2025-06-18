@@ -1,8 +1,5 @@
 /* Mermaid images */
-p > img[alt="diagram"] {
+p:has(img[alt="diagram"]) {
     width: 100%;
-}
-
-.mermaid {
-    width: 100%;
+    height: auto;
 }

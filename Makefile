@@ -9,8 +9,8 @@ MERMAID_ELK_FILE := node_modules/@mermaid-js/layout-elk/dist/mermaid-layout-elk.
 
 .PHONY: all clean puml
 
-all: svg copy-mermaidjs html
-dev: clean svg copy-mermaidjs livehtml
+all: svg mermaid-svg html
+dev: clean svg mermaid-svg livehtml
 
 puml: workspace.dsl
 	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/workspace.dsl:/usr/local/structurizr/workspace.dsl" -v "$(BASEDIR)/docs/afbeeldingen:/usr/local/structurizr/docs/afbeeldingen" $(STRUCTURIZR_IMAGE) export -format plantuml -output docs/afbeeldingen -workspace workspace.dsl
@@ -28,9 +28,10 @@ livehtml:
 html:
 	docker compose run --rm sphinx make html
 
-# Copy mermaid, mermaid-layout-elk and d3 to docs/_static
-copy-mermaidjs:
+mermaid-svg:
 	[[ -d node_modules ]] || (echo "❌ 'node_modules' not found. Run 'npm install'." && exit 1)
-	[[ -e $(MERMAID_FILE) ]] && cp $(MERMAID_FILE) docs/_static/js/mermaid.min.js
-	[[ -e $(D3_FILE) ]] && cp $(D3_FILE) docs/_static/js/d3.min.js
-	[[ -e $(MERMAID_ELK_FILE) ]] && cp $(MERMAID_ELK_FILE) docs/_static/js/mermaid-layout-elk.esm.min.mjs
+	@echo "Processing markdown files with Mermaid diagrams..."
+	@find docs -type f -name "*.md" | while read -r file; do \
+		echo "Processing $$file..."; \
+		./node_modules/.bin/mmdc -i "$$file" -o "$${file%.md}.md" || echo "⚠️  Failed to process $$file"; \
+	done

@@ -25,15 +25,10 @@ language = "nl"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_static_path = ["_static"]
+html_css_files = ["custom.css"]
+
 html_show_sphinx = False
 html_show_sourcelink = False
-
-# Add mermaidjs and dependencies to the _static directory to avoid security policy issues in the browser
-# https://manpages.debian.org/unstable/python3-sphinxcontrib-mermaid/sphinxcontrib-mermaid.3.en.html
-
-mermaid_use_local = "/_static/js/mermaid.min.js"
-mermaid_elk_use_local = "/_static/js/mermaid-layout-elk.esm.min.mjs"
-d3_use_local = "/_static/js/d3.min.js"
 
 # -- Theme: Rijksoverheid UI and Options for HTML output -----------
 

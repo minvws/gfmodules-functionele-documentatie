@@ -1,0 +1,8 @@
+/* Mermaid images */
+p > img[alt="diagram"] {
+    width: 100%;
+}
+
+.mermaid {
+    width: 100%;
+}

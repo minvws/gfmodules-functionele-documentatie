@@ -3,9 +3,6 @@ SHELL := /bin/bash
 BASEDIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 STRUCTURIZR_IMAGE := structurizr/cli
 PLANTUML_IMAGE := plantuml/plantuml
-MERMAID_FILE := node_modules/mermaid/dist/mermaid.min.js
-D3_FILE := node_modules/d3/dist/d3.min.js
-MERMAID_ELK_FILE := node_modules/@mermaid-js/layout-elk/dist/mermaid-layout-elk.esm.min.mjs
 
 .PHONY: all clean puml
 

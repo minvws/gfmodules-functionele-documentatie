@@ -8,7 +8,7 @@
     "url": "git+https://github.com/minvws/gfmodules-functional-documentation.git"
   },
   "dependencies": {
-    "@mermaid-js/layout-elk": "^0.1.7",
+    "@mermaid-js/layout-elk": "^0.1.8",
     "mermaid": "^11.6.0"
   }
 }

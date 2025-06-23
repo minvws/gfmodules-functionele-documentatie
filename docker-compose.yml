@@ -9,7 +9,7 @@ services:
       dockerfile: docker/Dockerfile
     volumes:
       - ./sphinx:/sphinx
-      - ./docs:/docs
+      - ./build/docs:/docs
       - ./build:/build
     ports:
-      - 8599:8599
+      - "8599:8599"

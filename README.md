@@ -42,5 +42,5 @@ The documentation is built using Sphinx.
 
 ## Additional Resources
 
-- [Mermaid Documentation](https://mermaid.js.org/intro/)
+- [Mermaid-CLI](https://github.com/mermaid-js/mermaid-cli)
 - [Sphinx docs](https://www.sphinx-doc.org/en/master/usage/quickstart.html)

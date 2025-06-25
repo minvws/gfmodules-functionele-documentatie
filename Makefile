@@ -1,46 +1,91 @@
 SHELL := /bin/bash
+.ONESHELL:
 
+# Configuration
 BASEDIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+BUILD_DIR := build
+DOCS_DIR := docs
+IMAGES_DIR := $(DOCS_DIR)/afbeeldingen
+DOCS_BUILD_DIR := $(BUILD_DIR)/docs
+WORKSPACE_FILE := workspace.dsl
+
+# Docker images
 STRUCTURIZR_IMAGE := structurizr/cli
 PLANTUML_IMAGE := plantuml/plantuml
+DOCKER_USER := $(shell id -u):$(shell id -g)
 
-# Build directory for processed files
-BUILD_DIR := build
-DOCS_BUILD_DIR := $(BUILD_DIR)/docs
+.PHONY: all clean puml svg clean-build dev livehtml html mermaid-svg help
 
-.PHONY: all clean puml clean-build
+help:
+	@echo "Available targets:"
+	@echo "  all        - Build everything (svg, mermaid-svg, html)"
+	@echo "  dev        - Development build with live reload"
+	@echo "  puml       - Generate PlantUML files from workspace.dsl"
+	@echo "  svg        - Convert PlantUML to SVG"
+	@echo "  mermaid-svg- Process Mermaid diagrams in markdown"
+	@echo "  html       - Generate HTML documentation"
+	@echo "  livehtml   - Start live reload server"
+	@echo "  clean      - Clean generated files"
+	@echo "  clean-build- Clean build directory"
 
-all: svg mermaid-svg html
-dev: clean svg mermaid-svg html livehtml
+all: svg html
 
-puml: workspace.dsl
-	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/workspace.dsl:/usr/local/structurizr/workspace.dsl" -v "$(BASEDIR)/docs/afbeeldingen:/usr/local/structurizr/docs/afbeeldingen" $(STRUCTURIZR_IMAGE) export -format plantuml -output docs/afbeeldingen -workspace workspace.dsl
+dev: clean svg livehtml
+
+check-workspace:
+	@test -f $(WORKSPACE_FILE) || (echo "❌ $(WORKSPACE_FILE) not found" && exit 1)
+
+check-node-modules:
+	@test -d node_modules || (echo "❌ 'node_modules' not found. Run 'npm install'." && exit 1)
+
+puml: check-workspace
+	@echo "🔄 Generating PlantUML files..."
+	@mkdir -p $(IMAGES_DIR)
+	docker run --user $(DOCKER_USER) --rm \
+		-v "$(BASEDIR)/$(WORKSPACE_FILE):/usr/local/structurizr/workspace.dsl" \
+		-v "$(BASEDIR)/$(IMAGES_DIR):/usr/local/structurizr/docs/afbeeldingen" \
+		$(STRUCTURIZR_IMAGE) export -format plantuml -output docs/afbeeldingen -workspace workspace.dsl || \
+		(echo "❌ Failed to generate PlantUML files" && exit 1)
+	@echo "✅ PlantUML files generated"
 
 svg: puml
-	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR)/docs/afbeeldingen:/source" $(PLANTUML_IMAGE) -tsvg -o "/source" "/source/*.puml"
-	rm -f docs/afbeeldingen/*.puml
+	@echo "🔄 Converting PlantUML to SVG..."
+	docker run --user $(DOCKER_USER) --rm \
+		-v "$(BASEDIR)/$(IMAGES_DIR):/source" \
+		$(PLANTUML_IMAGE) -tsvg -o "/source" "/source/*.puml" || \
+		(echo "❌ Failed to convert PlantUML to SVG" && exit 1)
+	@echo "🧹 Cleaning up PlantUML files..."
+	@rm -f $(IMAGES_DIR)/*.puml
+	@echo "✅ SVG files generated"
 
 clean: clean-build
-	rm -f docs/afbeeldingen/*.puml docs/afbeeldingen/*.svg
+	@echo "🧹 Cleaning generated files..."
+	@rm -f $(IMAGES_DIR)/*.puml $(IMAGES_DIR)/*.svg
+	@echo "✅ Cleaned"
 
 clean-build:
+	@echo "🧹 Cleaning build directory..."
 	rm -rf $(DOCS_BUILD_DIR)
+	@echo "✅ Build directory cleaned"
 
 livehtml:
-	docker compose up
+	docker compose --profile dev up
 
-html:
-	docker compose run --rm sphinx make html
+html: mermaid-svg
+	@echo "🔄 Generating HTML documentation..."
+	docker compose --profile ci run --rm sphinx-ci make html
+	@echo "✅ HTML documentation generated"
 
-mermaid-svg: $(DOCS_BUILD_DIR)
-	[[ -d node_modules ]] || (echo "❌ 'node_modules' not found. Run 'npm install'." && exit 1)
-	@echo "Copying docs to build directory..."
-	@cp -r docs/* $(DOCS_BUILD_DIR)/
-	@echo "Processing markdown files with Mermaid diagrams..."
+mermaid-svg: check-node-modules $(DOCS_BUILD_DIR)
+	@echo "🔄 Processing Mermaid diagrams..."
+	@echo "📂 Copying docs to build directory..."
+	@cp -r $(DOCS_DIR)/* $(DOCS_BUILD_DIR)/
+	@echo "🔄 Processing markdown files with Mermaid diagrams..."
 	@find $(DOCS_BUILD_DIR) -type f -name "*.md" | while read -r file; do \
 		echo "Processing $$file..."; \
 		./node_modules/.bin/mmdc -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
 	done
+	@echo "✅ Mermaid diagrams processed"
 
 $(DOCS_BUILD_DIR):
 	@mkdir -p $(DOCS_BUILD_DIR)

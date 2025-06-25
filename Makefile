@@ -1,5 +1,4 @@
 SHELL := /bin/bash
-.ONESHELL:
 
 # Configuration
 BASEDIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))

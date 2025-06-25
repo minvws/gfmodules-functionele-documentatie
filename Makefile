@@ -30,5 +30,5 @@ mermaid-svg:
 	@echo "Processing markdown files with Mermaid diagrams..."
 	@find docs -type f -name "*.md" | while read -r file; do \
 		echo "Processing $$file..."; \
-		./node_modules/.bin/mmdc -i "$$file" -o "$${file%.md}.md" || echo "⚠️  Failed to process $$file"; \
+		./node_modules/.bin/mmdc -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
 	done

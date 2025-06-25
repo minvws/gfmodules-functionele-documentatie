@@ -1,5 +1,4 @@
 /* Mermaid images */
-p:has(img[alt="diagram"]) {
-    width: 100%;
-    height: auto;
+p {
+    align-self: stretch;
 }

@@ -39,7 +39,7 @@ mermaid-svg: $(DOCS_BUILD_DIR)
 	@echo "Processing markdown files with Mermaid diagrams..."
 	@find $(DOCS_BUILD_DIR) -type f -name "*.md" | while read -r file; do \
 		echo "Processing $$file..."; \
-		npx mmdc -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
+		./node_modules/.bin/mmdc -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
 	done
 
 $(DOCS_BUILD_DIR):

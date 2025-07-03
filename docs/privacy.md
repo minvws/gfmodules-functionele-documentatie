@@ -1,5 +1,10 @@
 # Privacyverklaring
 
+**Disclaimer**: Alle beschreven documentatie op deze site is provisioneel en kan op basis van ontwikkelingen in
+werkgroepen en daarbuiten wijzigen. De beoogde diensten zijn nog niet in gebruik op een productie omgeving en
+verwerken geen persoonsgegevens buiten de personen om die meewerken aan een Proof of Concept en/of de ontwikkeling
+van de beschreven systemen.
+
 ## Welke persoonsgegevens verwerken wij?
 
 De Generieke Functies functionele documentatie website verwerkt alleen de gegevens die nodig zijn

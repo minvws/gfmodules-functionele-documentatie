@@ -1,4 +1,15 @@
-# Generieke Functies functionele documentatie
+# Generieke Functies
+
+De Generieke Functies dragen bij aan het digitaliseren van de zorg voor Nederlandse zorgaanbieders
+en/of burgers, als vastgelegd in het NVS (Nationale Visie en Strategie).
+
+We ontwikkelen en leveren werkende open source software voor (deelgebieden van) generieke functies op basis van privacy
+en security by design.
+
+De software kan onderdeel uitmaken van POCs, proeftuinen, pilots en/of productie platformen die door iRealisatie worden
+geleverd aan Ministerie van VWS.
+
+## Functionele documentatie
 
 De documentatie beschrijft in globaal functionele en technische termen hoe de
 onderstaande generieke functies worden gerealiseerd:

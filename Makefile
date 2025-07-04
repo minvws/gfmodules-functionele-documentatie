@@ -11,7 +11,11 @@ WORKSPACE_FILE := workspace.dsl
 # Docker images
 STRUCTURIZR_IMAGE := structurizr/cli
 PLANTUML_IMAGE := plantuml/plantuml
-DOCKER_USER := $(shell id -u):$(shell id -g)
+
+# Export UID and GID for docker and docker-compose
+export UID := $(shell id -u)
+export GID := $(shell id -g)
+
 
 .PHONY: all clean puml svg clean-build dev livehtml html mermaid-svg help
 
@@ -33,14 +37,14 @@ dev: clean svg livehtml
 
 puml: $(WORKSPACE_FILE)
 	mkdir -p $(IMAGES_DIR)
-	docker run --user $(DOCKER_USER) --rm \
+	docker run --rm \
 		-v "$(BASEDIR)/$(WORKSPACE_FILE):/usr/local/structurizr/workspace.dsl" \
 		-v "$(BASEDIR)/$(IMAGES_DIR):/usr/local/structurizr/docs/afbeeldingen" \
 		$(STRUCTURIZR_IMAGE) export -format plantuml -output docs/afbeeldingen -workspace workspace.dsl || \
 		(echo "❌ Failed to generate PlantUML files" && exit 1)
 
 svg: puml
-	docker run --user $(DOCKER_USER) --rm \
+	docker run --rm \
 		-v "$(BASEDIR)/$(IMAGES_DIR):/source" \
 		$(PLANTUML_IMAGE) -tsvg -o "/source" "/source/*.puml" || \
 		(echo "❌ Failed to convert PlantUML to SVG" && exit 1)

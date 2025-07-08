@@ -20,6 +20,9 @@ onderstaande generieke functies worden gerealiseerd:
 Tevens beschrijft de documentatie de rol van additionele systemen zoals het
 [pseudoniemen systeem](./pseudoniemen/01_inleiding.md).
 
+Voor een volledig overzicht van alle afkortingen en begrippen die in deze documentatie
+worden gebruikt, zie de [Afkortingen en Begrippen](./afkortingen_en_begrippen.md) pagina.
+
 **Disclaimer:** Alle hier beschreven documentatie is provisioneel en kan op
 basis van ontwikkelingen in werkgroepen en daarbuiten wijzigen. De informatie
 wordt verstrekt "zoals deze is" zonder enige expliciete of impliciete garanties.
@@ -67,4 +70,12 @@ pseudoniemen/02_termen.md
 pseudoniemen/03_gebruiks_casussen.md
 pseudoniemen/04_architectuur.md
 pseudoniemen/05_koppelvlakken
+```
+
+```{toctree}
+:hidden:
+:depth: 1
+:caption: 📖 Algemeen
+
+afkortingen_en_begrippen.md
 ```

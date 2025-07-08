@@ -26,9 +26,8 @@ html:
 	docker compose run --rm sphinx make html
 
 mermaid-svg:
-	[[ -d node_modules ]] || (echo "❌ 'node_modules' not found. Run 'npm install'." && exit 1)
 	@echo "Processing markdown files with Mermaid diagrams..."
 	@find docs -type f -name "*.md" | while read -r file; do \
 		echo "Processing $$file..."; \
-		./node_modules/.bin/mmdc -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
+		docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR):/data" minlag/mermaid-cli:latest -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
 	done

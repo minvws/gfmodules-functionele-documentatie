@@ -1,5 +1,5 @@
 /* Mermaid images */
-p {
+p:has(img:only-child) {
     /* Workaround for chicken/egg auto-sizing issues of `p>img` mermaid
     diagrams, which have width:100% in their SVG source, resulting in a 0-width
     paragraph. */

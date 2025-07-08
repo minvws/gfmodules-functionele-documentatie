@@ -62,14 +62,13 @@ livehtml:
 html: mermaid-svg
 	docker compose --profile ci run --rm sphinx-ci make html
 
-mermaid-svg: $(DOCS_BUILD_DIR)
-	[[ -d node_modules ]] || (echo "❌ 'node_modules' not found. Run 'npm install'." && exit 1)
+mermaid-svg:
 	@echo "📂 Copying docs to build directory..."
 	cp -r $(DOCS_DIR)/* $(DOCS_BUILD_DIR)/
 	@echo "🔄 Processing markdown files with Mermaid diagrams..."
 	@find $(DOCS_BUILD_DIR) -type f -name "*.md" | while read -r file; do \
 		echo "🔄 Processing $$file..."; \
-		./node_modules/.bin/mmdc -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
+		docker run --user $(shell id -u):$(shell id -g) --rm -v "$(BASEDIR):/data" minlag/mermaid-cli:latest -i "$$file" -o "$$file" || echo "⚠️  Failed to process $$file"; \
 	done
 
 $(DOCS_BUILD_DIR):

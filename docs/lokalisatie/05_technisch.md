@@ -10,7 +10,7 @@ het mogelijk om:
 - beschikbaarheid van zorgdata te verwijderen
 - op te vragen welke data geregistreerd is
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     autonumber
     actor zv as Zorgvelener
@@ -34,7 +34,7 @@ welke zorgaanbieders data hebben die bij de vraag past.
 Hieronder staat een schematische weergave van de stappen in het opzoek proces in
 samenhang met andere systemen.
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     autonumber
     actor zv as Zorgvelener

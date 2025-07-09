@@ -1,15 +1,24 @@
 services:
-  sphinx:
+  sphinx-dev:
+    profiles: ["dev"]
     user: "${UID}:${GID}"
     build:
       context: .
-      args:
-        NEW_UID: ${NEW_UID:-1000}
-        NEW_GID: ${NEW_GID:-1000}
       dockerfile: docker/Dockerfile
     volumes:
       - ./sphinx:/sphinx
       - ./docs:/docs
       - ./build:/build
     ports:
-      - 8599:8599
+      - "8599:8599"
+
+  sphinx-ci:
+    profiles: ["ci"]
+    user: "${UID}:${GID}"
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./sphinx:/sphinx
+      - ./build/docs:/docs
+      - ./build:/build

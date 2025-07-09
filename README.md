@@ -5,19 +5,12 @@ The documentation is built using Sphinx.
 
 ## Prerequisites
 
-- Node.js and npm
 - Make
 - Docker (with Sphinx and Python)
 
 ## Development
 
-1. Install project dependencies:
-
-    ```bash
-    npm install
-    ```
-
-2. Download the latest version of the Rijkshuisstijl Sphinx theme.
+1. Download the latest version of the Rijkshuisstijl Sphinx theme.
 
     For this, you need to have the GitHub CLI installed and authenticated.
     See [GitHub CLI documentation](https://github.com/cli/cli) for installation instructions.
@@ -26,7 +19,7 @@ The documentation is built using Sphinx.
     gh release download --clobber -D docs/ --repo minvws/icore-manon-sphinx-theme --pattern 'sphinx-rijkshuisstijl*.zip'
     ```
 
-3. Compile and generate the documentation locally
+2. Compile and generate the documentation locally
 
     It will start the local live server and watch for changes in the source files.
 
@@ -42,5 +35,5 @@ The documentation is built using Sphinx.
 
 ## Additional Resources
 
-- [Mermaid Documentation](https://mermaid.js.org/intro/)
+- [Mermaid-CLI](https://github.com/mermaid-js/mermaid-cli)
 - [Sphinx docs](https://www.sphinx-doc.org/en/master/usage/quickstart.html)

@@ -22,7 +22,7 @@ In aanvulling hierop zal binnen het lokalisatie proces ook de volgende stappen p
 
 Het onderstaande diagram geeft een vereenvoudigd overzicht van het lokalisatieproces.
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     actor Zorgverlener
     participant EPD
@@ -48,7 +48,7 @@ sequenceDiagram
 2. Het LMR ontvangt deze dossier bijwerking.
 3. Het LMR registreert de beschikbaarheid van het dossier bij de NVI.
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     actor Zorgverlener
     participant EPD

@@ -62,7 +62,7 @@ livehtml:
 html: mermaid-svg
 	docker compose --profile ci run --rm sphinx-ci make html
 
-mermaid-svg:
+mermaid-svg: $(DOCS_BUILD_DIR)
 	@echo "📂 Copying docs to build directory..."
 	cp -r $(DOCS_DIR)/* $(DOCS_BUILD_DIR)/
 	@echo "🔄 Processing markdown files with Mermaid diagrams..."

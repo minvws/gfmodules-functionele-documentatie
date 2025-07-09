@@ -1,25 +1,21 @@
 # Generic Functions - Functional Documentation
 
-This repository contains the functional documentation for the [Generic Functions Modules](https://github.com/minvws/gfmodules-coordination).
+This repository contains the functional documentation for the [Generic Functions](https://github.com/minvws/gfmodules-coordination).
 The documentation is built using Sphinx.
 
 ## Disclaimer
 
-This project and all associated code serve solely as documentation
-and demonstration purposes to illustrate potential system
-communication patterns and architectures.
+This repository sole purpose is to describe the functionality, structure, and interaction patterns of
+the [Generic Functions Modules](https://github.com/minvws/gfmodules-coordination).
 
-This codebase:
+Please note, this content:
 
-- Is NOT intended for production use
-- Does NOT represent a final specification
-- Should NOT be considered feature-complete or secure
+- Is for **informational and internal reference** purposes.
+- May not reflect finalized designs or decisions.
+- May be updated or restructured without notice.
 - May contain errors, omissions, or oversimplified implementations
-- Has NOT been tested or hardened for real-world scenarios
 
-The code examples are only meant to help understand concepts and demonstrate possibilities.
-
-By using or referencing this code, you acknowledge that you do so at your own
+By using or referencing this code or documentation, you acknowledge that you do so at your own
 risk and that the authors assume no liability for any consequences of its use.
 
 ## Prerequisites
@@ -59,14 +55,13 @@ risk and that the authors assume no liability for any consequences of its use.
 
 ## Contribution
 
-As stated in the [Disclaimer](#disclaimer) this project and all associated code serve solely as documentation and
-demonstration purposes to illustrate potential system communication patterns and architectures.
+This project's sole purpose is to provide documentation for the Generic Functions.
 
-For that reason we will only accept contributions that fit this goal. We do appreciate any effort from the
-community, but because our time is limited it is possible that your PR or issue is closed without a full justification.
+For that reason, we will only accept contributions that fit this goal. We do appreciate any effort from the
+community, but because our time is limited, it is possible that your PR or issue is closed without a full justification.
 
-If you plan to make non-trivial changes, we recommend to open an issue beforehand where we can discuss your planned changes.
+If you plan to make non-trivial changes, we recommend opening an issue beforehand where we can discuss your planned changes.
 This increases the chance that we might be able to use your contribution (or it avoids doing work if there are reasons
 why we wouldn't be able to use it).
 
-Note that all commits should be signed using a gpg key.
+Note that all commits should be signed using a GPG key.

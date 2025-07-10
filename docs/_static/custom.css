@@ -6,7 +6,7 @@ p:has(img:only-child) {
     align-self: stretch;
 }
 
-body>footer nav a:hover{
+body>footer nav a:hover {
     /* For now just a workaround, will be fixed in the next stable release of Manon */
     color: #ffffff !important;
- }
+}

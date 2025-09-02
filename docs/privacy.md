@@ -52,5 +52,5 @@ MinVWS die u elders vindt u op Rijksoverheid.nl.
 VWS heeft een functionaris voor gegevensbescherming (FG) als interne toezichthouder, die toezicht houdt op het
 zorgvuldig omgaan met persoonsgegevens door VWS. De FG is bereikbaar per e-mail: <fg-vws@minvws.nl>.
 
-Bent u het ergens niet mee eens en/of heeft u een klacht kunt u ook een melding doen bij de Autoriteit
-Persoonsgegevens.
+Bent u het ergens niet mee eens en/of heeft u een klacht kunt u ook een melding doen bij [de Autoriteit
+Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/privacyrechten/klacht-indienen-bij-de-ap).

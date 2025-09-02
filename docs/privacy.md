@@ -20,7 +20,8 @@ Wij verwerken IP-adressen uitsluitend voor de volgende doeleinden:
 
 ## Hoe lang bewaren wij persoonsgegevens?
 
-IP-adressen worden niet langer bewaard dan strikt noodzakelijk. In de regel worden zij, 12 maanden bewaard voor beveiligingsdoeleinden met uitloop van vijf jaar of langer indien een incident heeft plaatsgevonden.
+IP-adressen worden niet langer bewaard dan strikt noodzakelijk. In de regel worden zij, 12 maanden bewaard voor
+beveiligingsdoeleinden met uitloop van vijf jaar of langer indien een incident heeft plaatsgevonden.
 
 ## Was is de rechtsgrond van de verwerking?
 

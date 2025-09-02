@@ -7,36 +7,34 @@ van de beschreven systemen.
 
 ## Welke persoonsgegevens verwerken wij?
 
-De Generieke Functies functionele documentatie website verwerkt alleen de gegevens die nodig zijn
-voor het functioneren van de website. Op dit moment is dat alleen uw IP-adres,
-wat nodig is om de verbinding met de website tot stand te brengen.
-
-## Wie is verantwoordelijk voor de verwerking van uw persoonsgegevens?
-
-De minister van VWS is de zogenaamde verwerkingsverantwoordelijke in de zin van de Algemene verordening
-gegevensbescherming (AVG). De [Privacyverklaring van MinVWS](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy)
-vindt u elders op Rijksoverheid.nl.
-
-VWS heeft een functionaris voor gegevensbescherming (FG) als interne toezichthouder, die toezicht houdt op het
-zorgvuldig omgaan met persoonsgegevens door VWS. De FG is bereikbaar per e-mail: [FG-VWS@minvws.nl](mailto:FG-VWS@minvws.nl).
+De Generieke Functies functionele documentatie website, van het Ministerie van Volksgezondheid, Welzijn en Sport (VWS),
+verwerkt alleen de gegevens die nodig zijn voor het functioneren van de website. Op dit moment is dat alleen uw
+IP-adres, wat nodig is om de verbinding met de website tot stand te brengen.
 
 ## Met welk doel en op basis van welke grondslag verwerken wij persoonsgegevens?
 
-Uw gegevens worden alleen gebruikt om uw bezoek aan onze website te kunnen faciliteren.
+Wij verwerken IP-adressen uitsluitend voor de volgende doeleinden:
+
+* Het technisch mogelijk maken van de verbinding met onze website of online dienst.
+* Het beveiligen en monitoren van onze systemen (bijvoorbeeld om misbruik of aanvallen te detecteren).
 
 ## Hoe lang bewaren wij persoonsgegevens?
 
-VWS bewaart uw persoonsgegevens maximaal 5 dagen.
+IP-adressen worden niet langer bewaard dan strikt noodzakelijk. In de regel worden zij:
+
+* binnen 5 dagen verwijderd na het beëindigen van de sessie, of
+* tijdelijk opgeslagen in logbestanden, maximaal 12 maanden voor beveiligingsdoeleinden met een uitloop tot 5 jaar
+indien een incident heeft plaatsgevonden.
+
+## Was is de rechtsgrond van de verwerking?
+
+De verwerking van IP-adressen is noodzakelijk voor het gerechtvaardigd belang van VWS, namelijk het goed functioneren
+en beveiligen van onze website.
 
 ## Met wie delen wij persoonsgegevens?
 
-VWS deelt of verkoopt uw gegevens niet.
-
-## Kunnen persoonsgegevens langer bewaard worden?
-
-Persoonsgegevens worden niet in alle situaties automatisch verwijderd. In een beperkt aantal gevallen mogen we deze
-gegevens langer bewaren. Bijvoorbeeld als iemand strafbare feiten pleegt en de bewaarde gegevens noodzakelijk zijn
-voor opsporing. Zo’n geval kan leiden tot een verlenging van de bewaartermijn.
+VWS verstrekt IP-adressen niet aan derden, tenzij dit wettelijk verplicht is of noodzakelijk om onze systemen te
+beveiligen.
 
 ## Hoe beveiligen wij persoonsgegevens?
 
@@ -45,8 +43,18 @@ ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan.
 
 ## Kunt u gegevens inzien, wijzigen of verwijderen?
 
-U heeft het recht om uw persoonsgegevens in te zien, te wijzigen of te verwijderen.
-Daarnaast heeft u het recht om uw eventuele toestemming voor de gegevensverwerking in te trekken,
-of bezwaar te maken tegen de verwerking van uw persoonsgegevens door VWS.
+Omdat wij uitsluitend IP-adressen verwerken die meestal niet direct voor ons herleidbaar zijn tot een individu ende
+bewaartermijnen kort zijn, is het in de meeste gevallen niet mogelijk om rechten als inzage of verwijdering uit te
+oefenen. Indien je desondanks een verzoek wilt indienen, kun je dit doen. Hoe u dat kunt doen, kunt u vinden  in de
+algemene privacyverklaring van VWS (zie hieronder).
 
-U kunt ook [een melding doen bij de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/privacyrechten/klacht-indienen-bij-de-ap).
+## Hoe kan je contact met ons opnemen of een klacht indienen?
+
+Overige informatie over hoe het VWS verder persoonsgegevens verwerkt kunt u vinden via de Privacyverklaring van
+MinVWS die u elders vindt u op Rijksoverheid.nl.
+
+VWS heeft een functionaris voor gegevensbescherming (FG) als interne toezichthouder, die toezicht houdt op het
+zorgvuldig omgaan met persoonsgegevens door VWS. De FG is bereikbaar per e-mail: <fg-vws@minvws.nl>.
+
+Bent u het ergens niet mee eens en/of heeft u een klacht kunt u ook een melding doen bij de Autoriteit
+Persoonsgegevens.

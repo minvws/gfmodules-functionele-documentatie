@@ -11,7 +11,7 @@ De Generieke Functies functionele documentatie website, van het Ministerie van V
 verwerkt alleen de gegevens die nodig zijn voor het functioneren van de website. Op dit moment is dat alleen uw
 IP-adres, wat nodig is om de verbinding met de website tot stand te brengen.
 
-## Met welk doel en op basis van welke grondslag verwerken wij persoonsgegevens?
+## Met welk doel verwerken wij persoonsgegevens?
 
 Wij verwerken IP-adressen uitsluitend voor de volgende doeleinden:
 

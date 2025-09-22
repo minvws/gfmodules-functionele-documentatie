@@ -9,4 +9,4 @@ werkgroep van een praktische implementatie kan leren.
 
 Alle uitwerkingen zijn te vinden op GitHub:
 
-<https://github.com/minvws/gfmodules-coordination/tree/main>
+<https://github.com/minvws/gfmodules-coordination>

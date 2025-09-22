@@ -35,6 +35,17 @@ uitwerkingen](./technische_uitwerking.md) pagina staat hier informatie over.
 
 ```{toctree}
 :hidden:
+:depth: 1
+:caption: 📖 Algemeen
+
+index.md
+inleiding.md
+technische_uitwerking.md
+afkortingen_en_begrippen.md
+```
+
+```{toctree}
+:hidden:
 :depth: 3
 :caption: 📚 Adressering
 
@@ -70,12 +81,4 @@ pseudoniemen/02_termen.md
 pseudoniemen/03_gebruiks_casussen.md
 pseudoniemen/04_architectuur.md
 pseudoniemen/05_koppelvlakken
-```
-
-```{toctree}
-:hidden:
-:depth: 1
-:caption: 📖 Algemeen
-
-afkortingen_en_begrippen.md
 ```

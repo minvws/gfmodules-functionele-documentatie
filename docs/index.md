@@ -35,7 +35,18 @@ uitwerkingen](./technische_uitwerking.md) pagina staat hier informatie over.
 
 ```{toctree}
 :hidden:
-:depth: 3
+:maxdepth: 1
+:caption: 📖 Algemeen
+
+index.md
+inleiding.md
+technische_uitwerking.md
+afkortingen_en_begrippen.md
+```
+
+```{toctree}
+:hidden:
+:maxdepth: 3
 :caption: 📚 Adressering
 
 adressering/01_inleiding.md
@@ -48,7 +59,7 @@ adressering/06_koppelvlakken_registratie.md
 
 ```{toctree}
 :hidden:
-:depth: 3
+:maxdepth: 3
 :caption: 📚 Lokalisatie
 
 lokalisatie/01_inleiding.md
@@ -62,7 +73,7 @@ lokalisatie/07_koppelvlakken_lmr.md
 
 ```{toctree}
 :hidden:
-:depth: 3
+:maxdepth: 3
 :caption: 📚 Pseudoniemen
 
 pseudoniemen/01_inleiding.md
@@ -70,12 +81,4 @@ pseudoniemen/02_termen.md
 pseudoniemen/03_gebruiks_casussen.md
 pseudoniemen/04_architectuur.md
 pseudoniemen/05_koppelvlakken
-```
-
-```{toctree}
-:hidden:
-:depth: 1
-:caption: 📖 Algemeen
-
-afkortingen_en_begrippen.md
 ```

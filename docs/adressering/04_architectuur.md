@@ -21,7 +21,17 @@ adresboek, deze gegevens wijzigen te snel. Dit betekent dat:
 
 Het onderstaande diagram geeft een overzicht van de betrokken systemen:
 
-![Overzicht van de betrokken systemen bij adressering](../afbeeldingen/structurizr-generieke-functie-adressering.svg)
+![Een diagram met de titel "Generieke functie adressering" toont systemen en datastromen.
+  Uit het vak "Adresboek Synchronisatie", komen vier pijlen. Één pijl gaat
+  naar het vak "Centrale Adressenlijst" getiteld "Haal centrale adressenlijst op".
+  Twee pijlen getiteld "Verzamel entiteiten" gaan naar twee leverende partijen:
+  "Adresseringsgegevens A" en "Adresseringsgegevens B".
+  De vierde pijl is getiteld "Actualiseer entiteiten" en gaat naar het "Adresboek".
+  Vanuit een opvragende partij "EPD" gaat een andere pijl getiteld "Vind eindpunten [ITI-90]" naar het "Adresboek".
+  Er zijn vier overkoepelende containers van de systemen: "Leverende partij A", "Leverende partij B", "Generieke diensten"
+  en "Opvrager". "Adresseringsgegevens A" en "Adresseringsgegevens B" bevinden zich in respectievelijk
+  "Leverende partij A" en "Leverende partij B". In "Generieke diensten" bevinden zich "Adresboek Synchronisatie",
+  "Centrale Adressenlijst", en "Adresboek". In "Opvrager" bevindt zich "EPD".](../afbeeldingen/structurizr-generieke-functie-adressering.svg)
 
 ## Entiteiten
 

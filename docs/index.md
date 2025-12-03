@@ -34,9 +34,9 @@ implementaties getoetst. Op de [technische
 uitwerkingen](./technische_uitwerking.md) pagina staat hier informatie over.
 
 ```{toctree}
-:hidden:
-:maxdepth: 1
 :caption: 📖 Algemeen
+:maxdepth: 1
+:hidden:
 
 index.md
 inleiding.md
@@ -45,40 +45,37 @@ afkortingen_en_begrippen.md
 ```
 
 ```{toctree}
-:hidden:
-:maxdepth: 3
 :caption: 📚 Adressering
+:maxdepth: 3
+:hidden:
+:glob:
 
-adressering/01_inleiding.md
-adressering/02_termen.md
-adressering/03_gebruiks_casussen.md
-adressering/04_architectuur.md
-adressering/05_koppelvlakken_opzoeken.md
-adressering/06_koppelvlakken_registratie.md
+adressering/*
 ```
 
 ```{toctree}
-:hidden:
-:maxdepth: 3
 :caption: 📚 Lokalisatie
+:maxdepth: 3
+:hidden:
+:glob:
 
-lokalisatie/01_inleiding.md
-lokalisatie/02_termen.md
-lokalisatie/03_gebruiks_casussen.md
-lokalisatie/04_architectuur.md
-lokalisatie/05_technisch.md
-lokalisatie/06_koppelvlakken_nvi.md
-lokalisatie/07_koppelvlakken_lmr.md
+lokalisatie/*
 ```
 
 ```{toctree}
-:hidden:
-:maxdepth: 3
 :caption: 📚 Pseudoniemen
+:maxdepth: 3
+:hidden:
+:glob:
 
-pseudoniemen/01_inleiding.md
-pseudoniemen/02_termen.md
-pseudoniemen/03_gebruiks_casussen.md
-pseudoniemen/04_architectuur.md
-pseudoniemen/05_koppelvlakken
+pseudoniemen/*
+```
+
+```{toctree}
+:caption: 🖥 Omgevingen
+:maxdepth: 3
+:hidden:
+:glob:
+
+omgevingen/*
 ```

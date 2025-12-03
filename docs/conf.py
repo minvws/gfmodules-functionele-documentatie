@@ -39,8 +39,8 @@ locale_dirs = ['locales/']
 html_theme_options = {
     "description": "Generieke Functies",
     "github_user": "minvws",
-    "github_repo": "gfmodules-functional-documentation",
-    "tidelift_url": "https://github.com/minvws/gfmodules-functional-documentation",
+    "github_repo": "gfmodules-functionele-documentatie",
+    "tidelift_url": "https://github.com/minvws/gfmodules-functionele-documentatie",
     "show_copyright_privacy_block_footer": "true",
     "copyright_url": "/copyright.html",
     "privacy_url": "/privacy.html",

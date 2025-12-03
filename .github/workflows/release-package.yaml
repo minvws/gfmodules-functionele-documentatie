@@ -29,10 +29,10 @@ jobs:
         run: 'echo "{ \"version\": \"${{ env.RELEASE_VERSION }}\", \"git_ref\": \"$GITHUB_SHA\"}" > public/version.json'
 
       - name: Create tar
-        run: tar -czf gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}.tar.gz public/
+        run: tar -czf gfmodules-functionele-documentatie_${{ env.RELEASE_VERSION }}.tar.gz public/
 
       - name: Upload release tar
         uses: actions/upload-artifact@v5
         with:
-          name: gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}
-          path: gfmodules-functional-documentation_${{ env.RELEASE_VERSION }}.tar.gz
+          name: gfmodules-functionele-documentatie_${{ env.RELEASE_VERSION }}
+          path: gfmodules-functionele-documentatie_${{ env.RELEASE_VERSION }}.tar.gz

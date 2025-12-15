@@ -32,7 +32,7 @@ jobs:
         run: tar -czf gfmodules-functionele-documentatie_${{ env.RELEASE_VERSION }}.tar.gz public/
 
       - name: Upload release tar
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: gfmodules-functionele-documentatie_${{ env.RELEASE_VERSION }}
           path: gfmodules-functionele-documentatie_${{ env.RELEASE_VERSION }}.tar.gz

@@ -14,7 +14,7 @@ release = "1"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser", "sphinxcontrib.mermaid"]
+extensions = ["myst_parser", "sphinxcontrib.mermaid", "sphinx_rijkshuisstijl_2008"]
 
 templates_path = ["_templates"]
 exclude_patterns = ['_build']
@@ -32,7 +32,7 @@ html_show_sourcelink = False
 
 # -- Theme: Rijksoverheid UI and Options for HTML output -----------
 
-html_theme = 'sphinx-rijkshuisstijl-2008'
+html_theme = 'sphinx_rijkshuisstijl_2008'
 html_theme_path = ["."]
 locale_dirs = ['locales/']
 

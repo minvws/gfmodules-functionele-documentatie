@@ -18,10 +18,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: Download the Sphinx Rijkshuisstijl theme
-        run: gh release download --clobber -D docs/ --repo minvws/icore-manon-sphinx-theme --pattern 'sphinx-rijkshuisstijl*.zip'
-        env:
-          GH_TOKEN: ${{ secrets.REPO_READ_ONLY_TOKEN }}
-
       - name: Run make all
         run: make all

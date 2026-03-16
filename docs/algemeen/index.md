@@ -5,11 +5,11 @@
 De documentatie beschrijft in globaal functionele en technische termen hoe de
 onderstaande generieke functies worden gerealiseerd:
 
-- [Adressering](./adressering/index.md)
-- [Lokalisatie](./lokalisatie/index.md)
+- [Adressering](../adressering/index.md)
+- [Lokalisatie](../lokalisatie/index.md)
 
 Tevens beschrijft de documentatie de rol van additionele systemen zoals het
-[pseudoniemen systeem](./pseudoniemen/index.md).
+[pseudoniemen systeem](../pseudoniemen/index.md).
 
 **Disclaimer:** Alle hier beschreven documentatie is provisioneel en kan op
 basis van ontwikkelingen in werkgroepen en daarbuiten wijzigen. De informatie
@@ -36,9 +36,9 @@ Deze pagina bevat een overzicht van alle afkortingen en begrippen die worden
 gebruikt in de documentatie van de Generieke Functies. Voor specifieke termen
 per module, zie ook:
 
-- [Adressering - Afkortingen en Begrippen](./adressering/index.md#termen)
-- [Lokalisatie - Afkortingen en Begrippen](./lokalisatie/index.md#termen)
-- [Pseudoniemen - Afkortingen en Begrippen](./pseudoniemen/index.md#termen)
+- [Adressering - Afkortingen en Begrippen](../adressering/index.md#termen)
+- [Lokalisatie - Afkortingen en Begrippen](../lokalisatie/index.md#termen)
+- [Pseudoniemen - Afkortingen en Begrippen](../pseudoniemen/index.md#termen)
 
 ### Algemene afkortingen en begrippen
 

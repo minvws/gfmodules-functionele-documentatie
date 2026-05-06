@@ -14,10 +14,13 @@ release = "1"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser", "sphinxcontrib.mermaid"]
+extensions = [
+    "myst_parser",
+    "sphinxcontrib.mermaid",
+]
 
 templates_path = ["_templates"]
-exclude_patterns = ['_build']
+exclude_patterns = ["_build"]
 
 language = "nl"
 
@@ -32,16 +35,17 @@ html_show_sourcelink = False
 
 # -- Theme: Rijksoverheid UI and Options for HTML output -----------
 
-html_theme = 'sphinx-rijkshuisstijl-2008'
+html_theme = "sphinx_rijkshuisstijl_2008"
 html_theme_path = ["."]
-locale_dirs = ['locales/']
+locale_dirs = ["locales/"]
 
 html_theme_options = {
+    "logo_text": "Generieke Functies",
     "description": "Generieke Functies",
-    "github_user": "minvws",
-    "github_repo": "gfmodules-functionele-documentatie",
-    "tidelift_url": "https://github.com/minvws/gfmodules-functionele-documentatie",
+    "meta_footer": "Generieke Functies",
+    "slogan": "Generieke Functies",
     "show_copyright_privacy_block_footer": "true",
     "copyright_url": "/copyright.html",
     "privacy_url": "/privacy.html",
 }
+
